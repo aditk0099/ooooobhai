@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVYUG Public School | Primary School (UKG - 5th Class) in Dappar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1b2d4f',
+                            900: '#0f1c38',
+                            DEFAULT: '#1b365d',
+                        },
+                        gold: {
+                            400: '#f5b027',
+                            500: '#e59e18',
+                            600: '#c7810a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 28, 56, 0.94) 0%, rgba(27, 54, 93, 0.88) 100%), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-slate-50 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-gold-400"></i> Dappar, Derabassi, Punjab</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock text-gold-400"></i> Opens 8:00 AM (Mon-Sat)</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:08847595785" class="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-gold-400"></i> +91 88475 95785
+                </a>
+                <a href="https://wa.me/918847595785" target="_blank" class="hover:text-green-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- SVG Logo & School Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                        <!-- Custom Inline SVG Emblem matching official logo -->
+                        <svg viewBox="0 0 300 300" class="w-full h-full drop-shadow-sm">
+                            <circle cx="150" cy="150" r="145" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+                            <!-- Laurel Wreath Leaves (Left) -->
+                            <g fill="#c7810a">
+                                <path d="M 50 145 C 40 120 50 90 70 70 C 65 95 65 120 50 145 Z"/>
+                                <path d="M 45 180 C 35 155 42 125 60 110 C 58 135 55 160 45 180 Z"/>
+                                <path d="M 55 210 C 45 190 50 160 70 145 C 65 170 65 190 55 210 Z"/>
+                                <path d="M 75 240 C 60 220 70 190 90 175 C 85 198 80 220 75 240 Z"/>
+                                <path d="M 105 260 C 85 245 95 215 115 200 C 110 220 105 245 105 260 Z"/>
+                            </g>
+                            <!-- Laurel Wreath Leaves (Right) -->
+                            <g fill="#c7810a">
+                                <path d="M 250 145 C 260 120 250 90 230 70 C 235 95 235 120 250 145 Z"/>
+                                <path d="M 255 180 C 265 155 258 125 240 110 C 242 135 245 160 255 180 Z"/>
+                                <path d="M 245 210 C 255 190 250 160 230 145 C 235 170 235 190 245 210 Z"/>
+                                <path d="M 225 240 C 240 220 230 190 210 175 C 215 198 220 220 225 240 Z"/>
+                                <path d="M 195 260 C 215 245 205 215 185 200 C 190 220 195 245 195 260 Z"/>
+                            </g>
+                            <!-- Outer Navy Ring -->
+                            <circle cx="150" cy="150" r="115" fill="none" stroke="#1b365d" stroke-width="12"/>
+                            <!-- Inner Yellow Ring -->
+                            <circle cx="150" cy="150" r="102" fill="#f5b027" stroke="#ffffff" stroke-width="4"/>
+                            <circle cx="150" cy="150" r="72" fill="#ffffff" stroke="#1b365d" stroke-width="5"/>
+                            
+                            <!-- Sun Rays & Rising Sun -->
+                            <g stroke="#f5b027" stroke-width="6" stroke-linecap="round">
+                                <line x1="150" y1="82" x2="150" y2="92"/>
+                                <line x1="125" y1="88" x2="131" y2="97"/>
+                                <line x1="175" y1="88" x2="169" y2="97"/>
+                                <line x1="105" y1="105" x2="114" y2="112"/>
+                                <line x1="195" y1="105" x2="186" y2="112"/>
+                                <line x1="92" y1="128" x2="102" y2="131"/>
+                                <line x1="208" y1="128" x2="198" y2="131"/>
+                            </g>
+                            <path d="M 105 130 A 45 45 0 0 1 195 130 Z" fill="#f5b027"/>
+                            
+                            <!-- Open Book -->
+                            <path d="M 100 148 Q 125 138 150 148 Q 175 138 200 148 L 200 156 Q 175 146 150 156 Q 125 146 100 156 Z" fill="#1b365d"/>
+                            <path d="M 102 158 Q 125 148 150 158 Q 175 148 198 158 L 198 165 Q 175 155 150 165 Q 125 155 102 165 Z" fill="#1b365d"/>
+                            
+                            <!-- Joyful Child Figures -->
+                            <circle cx="150" cy="168" r="8" fill="#f5b027"/>
+                            <path d="M 135 186 C 135 174 165 174 165 186 L 158 205 L 142 205 Z" fill="#f5b027"/>
+                            <circle cx="128" cy="175" r="6" fill="#1b365d"/>
+                            <circle cx="172" cy="175" r="6" fill="#1b365d"/>
+                            
+                            <!-- Circular Text Alignment: NAVYUG PUBLIC SCHOOL -->
+                            <path id="textPathUpper" d="M 68,150 A 82,82 0 0,1 232,150" fill="none"/>
+                            <text font-family="Poppins, Arial" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="1">
+                                <textPath href="#textPathUpper" startOffset="50%" text-anchor="middle">NAVYUG PUBLIC SCHOOL</textPath>
+                            </text>
+                            
+                            <!-- Circular Tagline: Small Steps, Big Dreams -->
+                            <path id="textPathLower" d="M 226,150 A 76,76 0 0,1 74,150" fill="none"/>
+                            <text font-family="Poppins, Arial" font-size="12" font-weight="700" fill="#ffffff">
+                                <textPath href="#textPathLower" startOffset="50%" text-anchor="middle">★ Small Steps, Big Dreams ★</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-extrabold text-navy-900 tracking-tight block leading-none">NAVYUG PUBLIC SCHOOL</span>
+                        <span class="text-xs font-bold text-gold-600 tracking-wider">Small Steps, Big Dreams</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-8 font-medium text-slate-700">
+                    <a href="#home" class="hover:text-gold-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-gold-600 transition-colors">Facilities</a>
+                    <a href="#classes" class="hover:text-gold-600 transition-colors">Principal</a>
+                    <a href="#gallery" class="hover:text-gold-600 transition-colors">Gallery</a>
+                    <a href="#why-us" class="hover:text-gold-600 transition-colors">Admission Form</a>
+                    <a href="#contact" class="hover:text-gold-600 transition-colors">Contact & Admissions</a>
+                </nav>
+
+                <!-- Desktop Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/918847595785?text=Hello%20NAVYUG%20Public%20School,%20I%20want%20to%20enquire%20about%20Admissions%20for%20UKG-5th%20Class." target="_blank" 
+                       class="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm flex items-center gap-2 transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-gold-400 font-semibold text-sm transition-all shadow-md">
+                        Admission Open
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-slate-800 hover:text-navy-900 focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Facilities</a>
+            <a href="#classes" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Principal</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Gallery</a>
+            <a href="#why-us" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Admission Form</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Contact & Admissions</a>
+            <div class="pt-4 border-t border-slate-200 flex flex-col gap-2">
+                <a href="tel:08847595785" class="w-full text-center px-4 py-2.5 rounded-lg bg-navy-900 text-white font-medium text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-amber-400"></i> Call: 088475 95785
+                </a>
+                <a href="https://wa.me/918847595785" target="_blank" class="w-full text-center px-4 py-2.5 rounded-lg bg-emerald-600 text-white font-medium text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Direct
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 lg:py-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <!-- School Emblem / Badge in Hero -->
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 p-1.5 backdrop-blur-md shadow-xl flex items-center justify-center">
+                        <svg viewBox="0 0 300 300" class="w-full h-full">
+                            <circle cx="150" cy="150" r="145" fill="#ffffff"/>
+                            <circle cx="150" cy="150" r="115" fill="none" stroke="#1b365d" stroke-width="12"/>
+                            <circle cx="150" cy="150" r="102" fill="#f5b027"/>
+                            <circle cx="150" cy="150" r="72" fill="#ffffff" stroke="#1b365d" stroke-width="5"/>
+                            <path d="M 105 130 A 45 45 0 0 1 195 130 Z" fill="#f5b027"/>
+                            <path d="M 100 148 Q 125 138 150 148 Q 175 138 200 148 L 200 156 Q 175 146 150 156 Q 125 146 100 156 Z" fill="#1b365d"/>
+                            <circle cx="150" cy="168" r="8" fill="#f5b027"/>
+                            <path d="M 135 186 C 135 174 165 174 165 186 L 158 205 L 142 205 Z" fill="#f5b027"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-gold-400 font-extrabold text-lg tracking-wider uppercase">NAVYUG PUBLIC SCHOOL</div>
+                        <p class="text-xs text-slate-300 font-semibold italic">"Small Steps, Big Dreams"</p>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-400/20 border border-gold-400/40 text-gold-300 text-xs font-semibold mt-1">
+                            <i class="fa-solid fa-shapes text-gold-400"></i> Admissions Open: UKG to 5th Class
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Small Steps lead to <br>
+                    <span class="text-gold-400">Big Dreams</span> in Primary Education
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 font-light mb-8 leading-relaxed">
+                    At <strong>NAVYUG Public School</strong>, we foster a safe, joyful, and creative learning space where primary students (UKG to 5th Class) build strong values, critical thinking, and confidence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold text-base transition-all text-center shadow-lg shadow-gold-500/30">
+                        Apply for Admission
+                    </a>
+                    <a href="tel:08847595785" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-base transition-all text-center backdrop-blur-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-gold-400"></i> Call 088475 95785
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Highlights Banner -->
+    <section class="bg-navy-900 text-white py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl font-bold text-amber-400 mb-1">UKG - 5th</div>
+                    <div class="text-xs sm:text-sm text-slate-300">Class Range</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl font-bold text-teal-400 mb-1">Activity</div>
+                    <div class="text-xs sm:text-sm text-slate-300">Based Learning</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl font-bold text-amber-400 mb-1">Safe</div>
+                    <div class="text-xs sm:text-sm text-slate-300">& Caring Environment</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl font-bold text-teal-400 mb-1">Caring</div>
+                    <div class="text-xs sm:text-sm text-slate-300">Trained Teachers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-gold-600 font-bold uppercase tracking-wider text-sm">Our Facilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Facilities We Provide</h2>
+                <p class="text-slate-600 mt-4">Safe, modern and child-friendly environment for the best learning experience.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-navy-900 text-gold-400 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">CCTV Secured Campus</h3>
+                    <p class="text-slate-600 text-sm">Entire school campus is under CCTV surveillance for complete safety.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-teal-600 text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Caring Teachers</h3>
+                    <p class="text-slate-600 text-sm">Trained and loving teachers who give personal attention to every child.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-amber-500 text-navy-900 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">All Type of Activities</h3>
+                    <p class="text-slate-600 text-sm">Art, craft, dance, sports, festivals and many more fun activities.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Safe & Clean Environment</h3>
+                    <p class="text-slate-600 text-sm">Hygienic classrooms and secure campus where children feel happy.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-book-open"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Strong Academic Foundation</h3>
+                    <p class="text-slate-600 text-sm">Focus on English, Maths, Science and activity-based learning.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-all text-center">
+                    <div class="w-16 h-16 bg-rose-600 text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Small Class Strength</h3>
+                    <p class="text-slate-600 text-sm">Limited students so every child gets individual attention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-teal-600 font-bold uppercase tracking-wider text-sm">Our Leadership</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Principal of NAVYUG Academy</h2>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="bg-gradient-to-br from-navy-900 to-navy-800 p-8 flex items-center justify-center">
+                            <img src="principal-photo.png" alt="Principal" class="w-64 h-64 md:w-72 md:h-72 object-cover object-top rounded-2xl shadow-2xl border-4 border-gold-400">
+                        </div>
+                        <div class="p-8 md:p-10 flex flex-col justify-center">
+                            <span class="inline-block px-4 py-1.5 bg-gold-100 text-gold-700 text-xs font-bold uppercase rounded-full mb-3 w-fit">Principal</span>
+                            <h3 class="text-2xl md:text-3xl font-extrabold text-navy-900 mb-4">Principal of<br><span class="text-gold-600">NAVYUG Academy</span></h3>
+                            <p class="text-slate-600 mb-6">Guiding young minds with vision, care and dedication through "Small Steps, Big Dreams".</p>
+                            <div class="space-y-3 text-slate-700">
+                                <div class="flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-teal-500"></i><span>Dedicated to Primary Education (UKG – 5th)</span></div>
+                                <div class="flex items-center gap-3"><i class="fa-solid fa-heart text-rose-500"></i><span>Child-centric & Caring Approach</span></div>
+                                <div class="flex items-center gap-3"><i class="fa-solid fa-star text-amber-500"></i><span>Focus on Values + Academics</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-teal-600 font-bold uppercase tracking-wider text-sm">Glimpse of School Life</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">NAVYUG Photo Gallery</h2>
+                <p class="text-slate-600 mt-3">Explore real moments of learning, festivals, art, and celebrations of our young students.</p>
+                
+                <!-- Category Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8">
+                    <button onclick="filterGallery('all')" class="gallery-filter-btn px-5 py-2 rounded-full bg-navy-900 text-amber-400 font-medium text-sm transition-all shadow-sm active-filter" data-filter="all">
+                        All Photos
+                    </button>
+                    <button onclick="filterGallery('festivals')" class="gallery-filter-btn px-5 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 font-medium text-sm transition-all shadow-sm" data-filter="festivals">
+                        Festivals & Celebrations
+                    </button>
+                    <button onclick="filterGallery('classroom')" class="gallery-filter-btn px-5 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 font-medium text-sm transition-all shadow-sm" data-filter="classroom">
+                        Classroom Activities
+                    </button>
+                    <button onclick="filterGallery('events')" class="gallery-filter-btn px-5 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 font-medium text-sm transition-all shadow-sm" data-filter="events">
+                        Special Events
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid with User Provided Photos -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+                <div class="gallery-item festivals group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-krishna-janmashtami.png','Krishna Janmashtami')">
+                    <img src="gallery-krishna-janmashtami.png" alt="Krishna Janmashtami" class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festivals</span><h4 class="text-white font-bold">Krishna Janmashtami</h4></div></div>
+                </div>
+                <div class="gallery-item festivals group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-janmashtami-group.png','Janmashtami Group')">
+                    <img src="gallery-janmashtami-group.png" alt="Janmashtami Group" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festivals</span><h4 class="text-white font-bold">Janmashtami Group</h4></div></div>
+                </div>
+                <div class="gallery-item classroom group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-navratri.png','Navratri')">
+                    <img src="gallery-navratri.png" alt="Navratri" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Classroom</span><h4 class="text-white font-bold">Happy Navratri</h4></div></div>
+                </div>
+                <div class="gallery-item events group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-independence-day.png','Independence Day')">
+                    <img src="gallery-independence-day.png" alt="Independence Day" class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Events</span><h4 class="text-white font-bold">Independence Day</h4></div></div>
+                </div>
+                <div class="gallery-item events group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-army-independence.png','Army Independence')">
+                    <img src="gallery-army-independence.png" alt="Army Independence" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Events</span><h4 class="text-white font-bold">Army Dress Independence</h4></div></div>
+                </div>
+                <div class="gallery-item events group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-graduation.png','Graduation')">
+                    <img src="gallery-graduation.png" alt="Graduation" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Events</span><h4 class="text-white font-bold">Graduation Day</h4></div></div>
+                </div>
+                <div class="gallery-item classroom festivals group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-holi.png','Holi')">
+                    <img src="gallery-holi.png" alt="Holi" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festival</span><h4 class="text-white font-bold">Holi Handprint</h4></div></div>
+                </div>
+                <div class="gallery-item festivals group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-christmas.png','Christmas')">
+                    <img src="gallery-christmas.png" alt="Christmas" class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festivals</span><h4 class="text-white font-bold">Christmas</h4></div></div>
+                </div>
+                <div class="gallery-item events classroom group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-teachers-day.png','Teacher Day')">
+                    <img src="gallery-teachers-day.png" alt="Teacher Day" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Events</span><h4 class="text-white font-bold">Teacher's Day</h4></div></div>
+                </div>
+                <div class="gallery-item classroom group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-grape-coloring.png','Grape Coloring')">
+                    <img src="gallery-grape-coloring.png" alt="Grape" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Classroom</span><h4 class="text-white font-bold">Drawing Class</h4></div></div>
+                </div>
+                <div class="gallery-item festivals events group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-halloween-group.png','Halloween')">
+                    <img src="gallery-halloween-group.png" alt="Halloween" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festivals</span><h4 class="text-white font-bold">Halloween</h4></div></div>
+                </div>
+                <div class="gallery-item festivals events group relative rounded-2xl overflow-hidden bg-white shadow-md cursor-pointer border border-slate-200" onclick="openLightbox('gallery-halloween-boy.png','Spooky Look')">
+                    <img src="gallery-halloween-boy.png" alt="Spooky" class="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"><div><span class="text-amber-400 text-xs font-semibold uppercase">Festivals</span><h4 class="text-white font-bold">Spooky Look</h4></div></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-amber-400 focus:outline-none z-50">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Gallery Image" class="max-w-full max-h-[75vh] rounded-lg shadow-2xl object-contain">
+            <p id="lightbox-caption" class="text-white text-center mt-4 text-base font-semibold"></p>
+        </div>
+    </div>
+
+    <!-- Why Choose Us / Key Features -->
+    <section id="why-us" class="py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-gold-600 font-bold uppercase tracking-wider text-sm">Admissions Open</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Admission Enquiry Form</h2>
+                <p class="text-slate-600 mt-3">Fill the form for UKG to 5th Class. On submit it will open WhatsApp.</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 p-8 md:p-12">
+                <form id="enquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Parent's / Guardian Name *</label>
+                            <input type="text" id="parent-name" required placeholder="Enter parent full name" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-base">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Mobile Phone Number *</label>
+                            <input type="tel" id="mobile-number" required placeholder="Enter 10-digit mobile number" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-base">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Child Name *</label>
+                            <input type="text" id="child-name" required placeholder="Enter child full name" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-base">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Child Age</label>
+                            <input type="text" id="child-age" placeholder="e.g. 6 years" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-base">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Admission Required For *</label>
+                        <select id="class-select" required class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-base bg-white">
+                            <option value="">Select Class</option>
+                            <option value="UKG">UKG</option>
+                            <option value="Class 1st">Class 1st</option>
+                            <option value="Class 2nd">Class 2nd</option>
+                            <option value="Class 3rd">Class 3rd</option>
+                            <option value="Class 4th">Class 4th</option>
+                            <option value="Class 5th">Class 5th</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold rounded-xl shadow-lg text-lg uppercase tracking-wider transition-all">
+                        Submit Admission Enquiry
+                    </button>
+                </form>
+                <div id="form-message" class="hidden mt-6 p-4 rounded-xl bg-green-50 text-green-700 font-medium border border-green-200">
+                    <i class="fa-solid fa-circle-check mr-2"></i> Opening WhatsApp...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div>
+                    <span class="text-gold-400 font-bold uppercase tracking-wider text-sm">Admissions Open</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">Visit NAVYUG Public School Today</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Enrol your child for UKG to 5th Class. Visit our campus or get in touch for fee structure, admission criteria, and school timings.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-lg">School Address</h4>
+                                <p class="text-slate-300 text-sm mt-1">
+                                    New Sky City, Main Road, near Railway Station, <br>
+                                    Dappar, Bair Majra, Tehsil Derabassi, Punjab 140506
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-lg">Contact Phone</h4>
+                                <p class="text-slate-300 text-sm mt-1">
+                                    <a href="tel:08847595785" class="hover:text-amber-400 transition-colors">088475 95785</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-lg">School Hours</h4>
+                                <p class="text-slate-300 text-sm mt-1">
+                                    Monday – Saturday: Opens 8:00 AM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="tel:08847595785" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-navy-900 font-bold text-sm flex items-center gap-2 transition-all">
+                            <i class="fa-solid fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/918847595785?text=Hello%20NAVYUG%20Academy,%20I%20want%20to%20enquire%20about%20admission%20for%20UKG-5th%20Class." target="_blank" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center gap-2 transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Enquiry
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 300 300" class="w-full h-full">
+                                <circle cx="150" cy="150" r="145" fill="#ffffff"/>
+                                <circle cx="150" cy="150" r="115" fill="none" stroke="#1b365d" stroke-width="12"/>
+                                <circle cx="150" cy="150" r="102" fill="#f5b027"/>
+                                <circle cx="150" cy="150" r="72" fill="#ffffff" stroke="#1b365d" stroke-width="5"/>
+                                <path d="M 105 130 A 45 45 0 0 1 195 130 Z" fill="#f5b027"/>
+                                <path d="M 100 148 Q 125 138 150 148 Q 175 138 200 148 L 200 156 Q 175 146 150 156 Q 125 146 100 156 Z" fill="#1b365d"/>
+                                <circle cx="150" cy="168" r="8" fill="#f5b027"/>
+                                <path d="M 135 186 C 135 174 165 174 165 186 L 158 205 L 142 205 Z" fill="#f5b027"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-lg font-bold text-white tracking-wide block">NAVYUG PUBLIC SCHOOL</span>
+                            <span class="text-xs text-gold-400 font-semibold italic">"Small Steps, Big Dreams"</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Primary School (UKG - 5th Class) located at New Sky City, near Railway Station, Dappar, Tehsil Derabassi, Punjab.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Primary School</a></li>
+                        <li><a href="#classes" class="hover:text-gold-400 transition-colors">Classes (UKG - 5th)</a></li>
+                        <li><a href="#why-us" class="hover:text-gold-400 transition-colors">Admission Form</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition-colors">Admissions & Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+                    <p class="text-sm text-slate-400 mb-2">New Sky City, main road, near Railway station, Dappar, Bair Majra, Punjab 140506</p>
+                    <p class="text-sm text-gold-400 mb-4 font-semibold">Phone: 088475 95785</p>
+                    <div class="flex gap-3">
+                        <a href="tel:08847595785" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-gold-400 hover:bg-gold-500 hover:text-navy-900 transition-all">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/918847595785" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-green-400 hover:bg-green-500 hover:text-white transition-all">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                &copy; <span id="year"></span> NAVYUG Public School. All rights reserved. | Dappar, Punjab<br><span class="mt-2 inline-block text-xs font-bold text-gold-400">Made by Rohit Kumar</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+                function handleFormSubmit(event) {
+            event.preventDefault();
+            const parent = document.getElementById('parent-name').value.trim();
+            const mobile = document.getElementById('mobile-number').value.trim();
+            const child = document.getElementById('child-name').value.trim();
+            const age = document.getElementById('child-age').value.trim();
+            const cls = document.getElementById('class-select').value;
+            let message = "Hello NAVYUG Public School,%0A%0A*Admission Enquiry*%0A%0A";
+            message += "Parent Name: " + parent + "%0A";
+            message += "Mobile: " + mobile + "%0A";
+            message += "Child Name: " + child + "%0A";
+            if(age) message += "Child Age: " + age + "%0A";
+            message += "Class Required: " + cls + "%0A%0A";
+            message += "Please share admission details. Thank you!";
+            const whatsappURL = "https://wa.me/918847595785?text=" + message;
+            const msgBox = document.getElementById('form-message');
+            msgBox.classList.remove('hidden');
+            setTimeout(() => {
+                window.open(whatsappURL, '_blank');
+                document.getElementById('enquiry-form').reset();
+                msgBox.classList.add('hidden');
+            }, 800);
+        }
+
+        /* Gallery Filter Logic */
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('bg-white', 'text-slate-700');
+                    btn.classList.add('bg-navy-900', 'text-amber-400');
+                } else {
+                    btn.classList.remove('bg-navy-900', 'text-amber-400');
+                    btn.classList.add('bg-white', 'text-slate-700');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        /* Lightbox Functions */
+        function openLightbox(imageSrc, captionText) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            lightboxImg.src = imageSrc;
+            lightboxCaption.textContent = captionText;
+            lightbox.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        /* Close lightbox on Escape key */
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
